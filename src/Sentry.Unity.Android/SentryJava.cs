@@ -94,7 +94,7 @@ internal class SentryJava : ISentryJava
 
         try
         {
-            using var sentry = new AndroidJavaClass("io.sentry.android.core.SentryAndroid");
+            using var sentry = new AndroidJavaClass("com.sentry.android.SentryAndroidExtend");
             using var context = new AndroidJavaClass("com.unity3d.player.UnityPlayer")
                 .GetStatic<AndroidJavaObject>("currentActivity");
 
